@@ -1,0 +1,19 @@
+﻿server:
+  port: 2001
+
+spring:
+  profiles: dev
+  application:
+    name: eurekaServer
+ 
+eureka:
+  instance:
+    hostname: eurekaSrv1
+  client:
+    # 表示是否注册自身到eureka服务器
+    register-with-eureka: false
+    # 是否从eureka上获取注册信息
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:2001/eureka/
+#      defaultZone: http://eurekaSrv1:2001/eureka/,http://eurekaSrv2:2001/eureka/
