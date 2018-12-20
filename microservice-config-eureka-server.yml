@@ -2,7 +2,7 @@
   port: 2001
 
 spring:
-  profiles: dev
+  # profiles: dev
   application:
     name: eurekaServer
  
